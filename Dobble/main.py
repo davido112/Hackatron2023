@@ -9,9 +9,7 @@ data = []
 for i in range(max):
     data.append(i)
 
-egesz = len(data)
-
-kombinaciok_szama = math.comb(egesz, n)
+kombinaciok_szama = math.comb(max, n)
 valasz = ""
 if kombinaciok_szama > 100:
     valasz = input(f"Figyelem! Több mint száz({kombinaciok_szama}) lehetőség van. Ki szeretnéd generálni mindet? Igen/Nem (ENTER = Nem)")
